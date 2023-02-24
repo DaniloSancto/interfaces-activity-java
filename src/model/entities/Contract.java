@@ -16,7 +16,6 @@ public class Contract {
 	}
 
 	public Contract(int number, LocalDate date, double totalValue) {
-		super();
 		this.number = number;
 		this.date = date;
 		this.totalValue = totalValue;
@@ -50,4 +49,7 @@ public class Contract {
 		return installments;
 	}
 
+	public void addInstallments(Installment installment) {
+		installments.add(installment);
+	}
 }
